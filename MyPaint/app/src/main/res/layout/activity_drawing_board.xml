@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:id="@+id/drawer_layout">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                android:id="@+id/current_color_selection"
+                android:background="@drawable/current_color" />
+
+            <SeekBar
+                android:id="@+id/brush_thickness_seek_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="9dp"
+                android:max="@integer/seek_bar_max"
+                android:progress="@integer/seek_bar_min"
+                android:progressDrawable="@drawable/progress_background"
+                android:thumb="@drawable/seek_thumb_normal"
+                android:secondaryProgress="0"
+                android:layout_weight="15.63" />
+        </LinearLayout>
+
+        <com.example.abhishekmadan.mypaint.customview.DrawingCanvas
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:id="@+id/drawing_canvas" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/bg"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/oper_recyclerview"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
+        android:id="@+id/navigation_view"
+        android:layout_height="match_parent"
+        android:layout_width="70dp"
+        android:layout_gravity="start">
+
+        <ScrollView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="10dp"
+                android:background="#ffffff">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/black_color"
+                    android:tag="#000000"
+                    android:background="@drawable/black_color" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/blue_color"
+                    android:tag="#0000ff"
+                    android:background="@drawable/blue_color" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/green_color"
+                    android:tag="#00ff00"
+                    android:background="@drawable/green_color" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/orange_color"
+                    android:tag="#ffbb00"
+                    android:background="@drawable/orange_color" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/pink_color"
+                    android:tag="#FE2EF7"
+                    android:background="@drawable/pink_color" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/red_color"
+                    android:tag="#ff0000"
+                    android:background="@drawable/red_color" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/skyblue_color"
+                    android:tag="#01DFD7"
+                    android:background="@drawable/skyblue_color" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/violet_color"
+                    android:tag="#8904b1"
+                    android:background="@drawable/violet_color" />
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:id="@+id/white_color"
+                    android:tag="#ffffff"
+                    android:background="@drawable/white_color" />
+            </LinearLayout>
+        </ScrollView>
+    </android.support.design.widget.NavigationView>
+</android.support.v4.widget.DrawerLayout>

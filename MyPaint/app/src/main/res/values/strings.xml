@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Sketch Board</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <array name="operation_icon">
+        <item>"brush"</item>
+        <item>"eraser"</item>
+        <item>"color_pallet"</item>
+        <item>"cancel"</item>
+        <item>"text_input"</item>
+        <item>"undo"</item>
+        <item>"circle"</item>
+        <item>"square"</item>
+        <item>"oval"</item>
+        <item>"gallery"</item>
+        <item>"save"</item>
+    </array>
+    <string name="file_name">"File name"</string>
+</resources>
